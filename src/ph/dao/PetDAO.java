@@ -32,7 +32,7 @@ public class PetDAO
             rs = ps.executeQuery();
             while(rs.next())
             {
-                Pet pet = new Pet();
+                Pet pet = new Pet();//dasdad
                 pet.setBirthdate(rs.getString("birthdate"));
                 pet.setId(rs.getInt("id"));
                 pet.setName(rs.getString("name"));
